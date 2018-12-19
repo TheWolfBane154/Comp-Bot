@@ -12,9 +12,13 @@ fs.readdir("./commands/", (err, files) => {
     bot.commands.set(require(`./commands/${f}`).help.name, require(`./commands/${f}`));
   });
 });
-
-bot.on("ready", () => {
-bot.user.setGame("Hello there!")
+bot.on("message", msg => {
+  
+if(message.content == "D.update") {
+  bot.user.setGame("Hello there!")
+} else return;
+  
 });
+
 
 bot.on(process.env.Token)
