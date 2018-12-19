@@ -5,8 +5,8 @@ let ping = bot.ping
 let em = new Discord.Client()
 .setTitle("Bot info")
 .setDescription("Did you read me?")
-.addField("Name", name)
-.addField("Ping", ping)
+.addField("Name", "DOJRPBOT")
+.addField("Ping", bot.ping)
 
 message.channel.send({embed: em})
 
