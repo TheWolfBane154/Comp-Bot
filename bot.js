@@ -12,13 +12,11 @@ fs.readdir("./commands/", (err, files) => {
     bot.commands.set(require(`./commands/${f}`).help.name, require(`./commands/${f}`));
   });
 });
-bot.on("message", msg => {
-  
-if(message.content == "D.update") {
-  bot.user.setGame("Hello there!")
-} else return;
-  
-});
+
+bot.on('ready', () => {
+  bot.user.setActivity(`Hello there!`)
+  console.log("I'm alive!")
+})
 
 bot.on('message', message => {
   let mArray = message.content.split(" ")
