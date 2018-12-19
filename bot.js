@@ -15,6 +15,7 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready" () => {
 console.log("I'm ready sir!")
+bot.user.setGame("Hello there!")
 })
 
 bot.on(process.env.Token)
