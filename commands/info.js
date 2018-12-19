@@ -1,6 +1,4 @@
 module.exports.run = (bot, message, args, Discord) => {
-let name = bot.user
-let ping = bot.ping
 
 let em = new Discord.Client()
 .setTitle("Bot info")
