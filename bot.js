@@ -28,5 +28,7 @@ bot.on('message', message => {
   if (cmd) {
     cmd.run(bot, message, args, Discord)
 console.log(`${message.author.username} used the ${message.content.split(" ")[0]} command.`)
-
+}
+});
+  
 bot.on(process.env.Token)
